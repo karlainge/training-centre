@@ -1,0 +1,248 @@
+/*===================================================*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body{
+  margin:0;
+  padding:0;
+  color: #262626;
+  font: normal 100% Arial, Verdana, Sans Serif;
+  /*Justification changes spacing between words:*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+table, th, td{ 
+  border: 1px solid #0070c0;
+  border-collapse: collapse; 
+}
+
+th, td{ 
+  padding: 9px;
+  color: #000066;
+}
+
+th{ 
+  font-size: 18px;
+}
+table{
+  width:60%; 
+  margin-left:20%;
+}
+
+@media screen and (min-width: 768px) {
+   
+}
+
+.wireframe-navigation {
+  margin: 1%;
+  padding:3% 5%;
+  width: 90%;
+  background-color: #efefef;
+}
+
+.wireframe-navigation a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.introduction {
+  margin: 1%;
+}
+
+.introduction, .article {
+  height:10em;
+  margin-bottom: 1em;
+  background-color: #efefef;
+  text-align: center;
+}
+.column1, .column2, .column3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;
+  text-align: center;
+  border: 1px #000;
+}
+
+.column3 {
+  margin-right; 0%;
+}
+
+.footer {
+  background-color: #efefef;
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: #4d4d4d;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #e6f0ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* this code will change the color of links on hover */
+.navigation a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/* this code will add an active class to highlight 
+the current page for user better information where theya are. */
+.active {
+  background-color: #005ce6;
+  color: #fff;
+}
+
+/* this code with this link with class="icon" will open 
+and close the top navigation on small screens.*/
+.navigation .icon {
+  display: none;
+}
+
+/*media query starts here for navigation*/
+
+/*All links will be hiden when the screen is less 
+than 600 pixels wide* becides the index page - HOME*/
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navigation with JavaScript 
+when the user clicks on the icon. */
+
+/*this code will display the links vertically instead of horizontally 
+and navigation will be legible on small screens*/
+
+@media screen and (max-width: 600px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* this code will add a hover effect, but I did not add the links to the pages */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.content{
+  margin: 3% 20%;
+  /*Justification changes spacing between words:*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p.fill_1{ 
+  width:56%;
+  font-size:18px;
+  text-align: justify;
+}
+
+fieldset.form{ 
+width: 50%;
+color: #000066;
+font-size: 16px;
+}
+
+/*CSS transition Property
+https://www.w3schools.com/CSSref/css3_pr_transition.asp
+When an <input type="text"> gets focus, the width will gradually change from 100px to 250px:*/
+input[type=text] {
+  width: 100px;
+  transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 250px;
+}
+
+.legend{
+     color: #000066;
+     font-family: "Arial";
+     font-size: 20px;
+     font-weight:bold;
+     margin-left: 0px;/*The CSS margin properties are used to generate space around elements.
+            The margin properties set the size of the white space OUTSIDE the border.*/
+     margin-right: 0px;
+}
+.title {
+  color: grey;
+}
+
+.top:link { /*  Will redirect to the particular place on the page.*/
+color:#ff0066;
+text-decoration:none;
+}
+.top:hover {
+color:#ff0000;
+text-decoration:none;
+}
+/*=================Footer section=====================================*/
+footer {
+  padding: 2rem 0;
+}
+.bottomNav {
+  overflow: hidden;
+  background-color: #4d4d4d;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottomNav a {
+  float: left;
+  display: block;
+  color: #e6f0ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bottomNav a:hover {
+  background: #f1f1f1;
+  color: #000;
+}
+
+.bottomNav a.active {
+  background-color: #005ce6;
+  color: #fff;
+}
+#googleMap {
+  width:80%; 
+  height:400px;
+  margin-left: 10%;
+}
+
+
+
