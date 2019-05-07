@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link  rel="stylesheet" type="text/css" href="../css/wireframe.css"/> 
+  <title>find</title>
+</head>
+<body>
+  <div class = "header">
+   <a href="../html/site-map.html">BACK TO SITEMAP</a>
+    <h1>Logo</h1>
+    <h1>Wireframe Find us page</h1>
+  <!--********Navigation SECTION****************-->
+    <div class = "wireframe-navigation">
+      <a href="homepage.html">HOME</a>
+      <a href="coursepage.html">COURSES</a>
+      <a href="schedulepage.html">SCHEDULE</a>
+      <a href="tutorpage.html">TUTORS</a>
+      <a href="find-uspage.html">FIND US</a>
+    </div> 
+  </div>
+<!--********End of Navigation SECTION****************-->
+<!--********Content SECTION****************-->	
+  <div class ="wireframe-content">
+    <div class = "introduction">
+      <h1>Computer Training Centre</h1>
+      <p>Find Location and Parking</p>
+      </div>
+     <div id="googleMap" style="width:80%; height:400px;">
+
+          <script>
+          function myMap() {
+          var mapProp= {
+              center:new google.maps.LatLng(51.508742,-0.120850),
+              zoom:5,
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          }
+          </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPmm7DAxVbAjY3n3TDWSbdeBfi3YBoSUM&callback&callback=myMap"></script>
+    </div>
+  </div>
+  <footer>
+ <a href="../html/site-map.html">BACK TO SITEMAP</a>
+    <p>&copy; Copyright 2017</p>
+  </footer>
+ 
+ <br/>
+ 
+</body>
+</html>
