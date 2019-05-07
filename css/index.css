@@ -1,0 +1,470 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body{
+  margin:0;
+  padding:0;
+  color: #262626;
+  font: normal 100% "Arial", Verdana, Sans Serif;
+  /*Justification changes spacing between words:*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+@media screen and (min-width: 1000px) { 
+   
+}
+/*===================Navigation links===================================*/
+.navigation {
+  overflow: hidden;
+  background-color: #4d4d4d;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #e6f0ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* this code will change the color of links on hover */
+.navigation a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/* this code will add an active class to highlight 
+the current page for user better information where theya are. */
+.active {
+  background-color: #005ce6;
+  color: #fff;
+}
+
+/* this code with this link with class="icon" will open 
+and close the top navigation on small screens.*/
+.navigation .icon {
+  display: none;
+}
+
+/*media query starts here for navigation*/
+
+/*All links will be hiden when the screen is less 
+than 600 pixels wide* becides the index page - HOME*/
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navigation with JavaScript 
+when the user clicks on the icon. */
+
+/*this code will display the links vertically instead of horizontally 
+and navigation will be legible on small screens*/
+
+@media screen and (max-width: 600px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* this code will add a hover effect, but I did not add the links to the pages */
+.fa:hover {
+    opacity: 0.7;
+}
+/*===================End of Navigation links===================================*/
+
+/*===================Index page starts here===================================*/
+.content{
+  margin: 3% 20%;
+  /*Justification changes spacing between words:*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+figcaption{
+  background-color: gray;
+  color: #fff;
+  width: 648px;
+  height: 30px;
+  text-align: center;
+}
+
+/*===================End of Index page===================================*/
+
+/*===================tutor page===================================*/
+/*styling images on tutor page to make them all the same size*/
+.mature-tutor{
+  width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.but-ton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+}
+
+.but-ton:hover {
+  background-color: #555;
+}
+/*===================End of Tutor page==========================*/
+
+/*===================COURSES PAGE===================================*/
+button.accordion {
+    background-color: #005ce6;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc; 
+    color: #005ce6;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #fff;
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*=================END OF COURSES PAGE=====================================*/
+
+/*===============Schedule and timetable===============*/
+
+input,
+section {
+  display: none;
+  padding: 1em;
+  clear: both;
+}
+
+/*
+  displays and styles 'label' tags (for radio button 'input' tags)
+*/
+label {
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  color: #888;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #eee;
+  line-height: 3em;
+  border-right: 1px solid #444;
+}
+/* hides the tab text but leaves the icons visible: */
+label span {
+  display: none;
+}
+label:last-child {
+  border-right: none;
+}
+
+
+/*
+  The radio button label tags form the 'tabs' used to show the 
+  sections - when clicked, the input tag 'checked' attribute 
+  becomes true, so the section tags with IDs 'content1-3' can
+  be targeted *in relation* to each radio button.
+
+  This changes the display of specific section elements (with
+  IDs 'content1-3') from 'none' to 'block', but *only when* the 
+  associated and preceding (~) radio button becomes 'checked'. 
+*/
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+  display: block;
+}
+/*
+  Styles label elements (tabs) *only* when they're 'checked'
+*/
+[id^="tab"]:checked + label {
+  background: #ccc;
+  color: #222;
+}
+[id^="tab"]:checked + label .fa {
+  color: #090;
+}
+
+.tab-content {
+  background: #fff;
+}
+.fa {
+  margin-right: 10px;
+}
+
+.tab_container section * {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+
+  0% { 
+  	opacity: 0;
+  }
+
+  100% { 
+  	opacity: 1;
+  }
+  
+}
+
+table, th, td.education_period { 
+    border: 1px solid #0070c0;
+    border-collapse: collapse; 
+}
+
+th, td.education_period{ 
+   padding: 9px;
+   color: #000066;
+}
+
+th.education_period{ 
+    font-size: 18px;
+}
+
+table.education_period{ 
+    width: 80%;
+    margin: 30px 80px;
+}
+
+caption.semester{ 
+    font-weight: bold;
+    color: #000066;
+    padding: 9px;
+    font-size: 18px;
+}
+
+table, td.education_period2{ 
+    border: 1px solid #0070c0;
+    border-collapse: collapse;
+}
+
+td.education_period2{
+   padding: 9px;
+   color: #000066;
+}
+
+
+table.education_period2{
+    width: 80%;
+    margin: 30px 80px;
+}
+
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 2em;
+  }
+  /* shows the tab text and the icons: */
+  label span {
+    display: inline;
+  }
+}
+/*===============End of schedule and timetable=============*/
+
+/*===================FORMS*/
+
+
+p.fill_1{ 
+  width:56%;
+  font-size:18px;
+  text-align: justify;
+}
+
+
+fieldset.form{ 
+width: 50%;
+color: #000066;
+font-size: 16px;
+}
+
+/*CSS transition Property
+https://www.w3schools.com/CSSref/css3_pr_transition.asp
+When an <input type="text"> gets focus, the width will gradually change from 100px to 250px:*/
+input[type=text] {
+  width: 100px;
+  transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 250px;
+}
+
+.legend{
+     color: #000066;
+     font-family: "Arial";
+     font-size: 20px;
+     font-weight:bold;
+     margin-left: 0px;/*The CSS margin properties are used to generate space around elements.
+            The margin properties set the size of the white space OUTSIDE the border.*/
+     margin-right: 0px;
+}
+
+/*=======END of FORMS=============== */
+
+.greeting{
+  color: #0000cc;
+}
+
+/*====================FIND US PAGE ==========*/
+
+#map {
+  margin: 5%;
+  width: 90%;
+  height: 600px;
+  background-color: #e6faff;
+}
+/*================END OF FIND US PAGE*/
+
+/*=================CONTACT page*/
+#contact{
+  text-align: left;
+}
+.contact-link {
+text-decoration: none;
+color: #0000ff;
+}
+
+
+/*=================End of Contact page*/
+
+
+.top:link { /*  Will redirect to the particular place on the page.*/
+color:#ff0066;
+text-decoration:none;
+}
+.top:hover {
+color:#ff0000;
+text-decoration:none;
+}
+/*=================Footer section=====================================*/
+footer {
+  padding: 2rem 0;
+}
+.bottomNav {
+  overflow: hidden;
+  background-color: #4d4d4d;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottomNav a {
+  float: left;
+  display: block;
+  color: #e6f0ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bottomNav a:hover {
+  background: #f1f1f1;
+  color: #000;
+}
+
+.bottomNav a.active {
+  background-color: #005ce6;
+  color: #fff;
+}
+
+section footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: -1em;
+}
+section footer p {
+  padding: 0 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+/*=================END OF COURSES PAGE=====================================*/
+
+@media screen and (min-width: 768px) {
+   table{width: 100%;}
+}
