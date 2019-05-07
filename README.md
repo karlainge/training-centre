@@ -31,7 +31,7 @@ As well as that, I have included _Colour scheme_ I am going to use, _fonts,_ and
 
 ### **3. Mock-up sketches**
 
-Second stage included creating [Mock-up sketches](https://github.com/Anjela-Mikhaylova/assignment2/blob/master/documentation/Mock-up%20sketches.pdf) according to Information Architecture plan, 
+Second stage included creating [Mock-up sketches](https://github.com/AnjelaMikhaylova/training-centre/blob/master/documentation/Mock-up%20%20sketches.pdf) according to Information Architecture plan, 
 where I have designed following five pages: Home page, Courses page, Schedule page, Tutor page, and Find us page.  
 
 All raw sketches I have included to the Documentation folder. The [Mock-up sketches.pdf file](https://github.com/AnjelaMikhaylova/training-centre/blob/master/documentation/Mock-up%20%20sketches.pdf) 
