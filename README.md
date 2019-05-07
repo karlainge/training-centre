@@ -71,6 +71,5 @@ where user testing process was documented.
 
 ### **7. HTML and CSS validation**
 
-I have redularly been validating [HTML] and [CSS](https://github.com/Anjela-Mikhaylova/assignment2/blob/master/documentation/HTML%20%20and%20CSS%20validation.pdf) pages.
-
+I have redularly been validating HTML and CSS
 
