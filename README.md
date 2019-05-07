@@ -1,5 +1,5 @@
 
-![Tutor](/images/training-centre.jpg)
+![Tutor](../images/training-centre.jpg)
 
 # Project Scenario
 
