@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link  rel="stylesheet" type="text/css" href="../css/wireframe.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>enrolment</title>
+		
+	</head>
+	<body>
+		<!--********Navigation SECTION****************-->
+    <header>
+        <div class="navigation" id="topNavigation">
+          <a href="../index.html">HOME</a>
+          <a href="course.html">COURSES</a>
+          <a href="schedule.html">SCHEDULE</a>
+          <a href="tutor.html">TUTORS</a>
+          <a href="#" class="active">ENROL</a>
+          <a href="find.html">FIND US</a>
+          <a href="contact-us.html">CONTACT US</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="functionNavTop()">&#9776;</a>
+        </div>
+		</header>
+    
+<!--********End of Navigation SECTION****************-->	
+  <div class = "content">	
+    <div id="content">	
+			<h1 class = "title">Enrolment Form</h1>
+			<hr>
+			<p class="fill-in">Thank you for considering applying to Computer Training Centre</p>
+			<p class="fill-in">Please complete all sections of the form below for prefered courses:</p>
+			
+			
+			
+		<!--***********FORM SECTION***************************************************************************-->	
+	
+      <form name = "comments" method = "post" action = "mailto:P15212017@my365.dmu.ac.uk"> 	
+        <fieldset class="form">
+          <!--The <legend> tag defines a caption for the 'fieldset' element.-->
+            <legend><span class="legend">APPLICATION FORM</span></legend><br>
+              <h4>Personal Information:</h4>
+                <label class="form-label">Title:</label>
+                <select>
+                <option value="title">Select Title</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+                </select>
+                <br><br>
+
+                <label class="form-label">First Name:
+                <input type = "text" name = "firstname" size="25" maxlength="30"></label>
+                <br/><br/>
+                
+                <label class="form-label">Middle Name (s):
+                <input type = "text" name = "firstname" size="25" maxlength="30"></label>
+                <br/><br/>
+                
+                <label class="form-label">Last Name:
+                <input type = "text" name = "lasttname" size="25" maxlength="30"></label>
+                <br><br>
+      
+                <!-- ====Enter a date of birth before 1997-01-01 ==== -->
+                
+                <label class="form-label">Date of Birth:
+                <input type = "text" name = "dateofbirth" maxlength ="10">
+                </label>
+                <br><br>
+                <!-- ====END OF birth date section ==== -->
+                
+                <!-- ====Gender buttons section ==== -->
+                <label class="form-label">Gender:</label>
+                <input type = "radio" name = "sex" value = "male" checked>Male
+                <input type = "radio" name = "sex" value = "female" checked>Female
+                <br><br>
+                <!-- ====Gender identity section ==== -->
+                <label class="form-label">Gender Identity</label>
+
+                <select>
+                <option value="">Please select</option>
+                <option value="Bisexual">Bisexual</option>
+                <option value="Gay Man">Gay Man</option>												
+                <option value="Heterosexual">Heterosexual</option>
+                <option value="Lesbian/Gay">Lesbian/Gay</option>
+                <option value="Transgender">Transgender</option>
+                <option value="Prefer not to say">Prefer not to say</option>												
+                </select>
+                <br><br>
+                        <!-- ====END of Gender identity  section ====-->
+                  <!-- ====Ethnicity section ==== -->
+                <label class="form-label">Ethnicity</label>
+            
+                <select>
+                <option value="">Please select</option>
+                <option value="English/Welsh/Scottish/Northern Irish/British">English/Welsh/Scottish/Northern Irish/British</option>
+                <option value="Irish" >Irish</option>
+                <option value="Gypsy or Irish Traveller">Gypsy or Irish Traveller</option>
+                <option value="Any other White background">Any other White background</option>
+
+                <option value="White and Black Caribbean">White and Black Caribbean</option>
+                <option value="White and Black African">White and Black African</option>
+                <option value="White and Asian">White and Asian</option>
+                <option value="Any other mixed background">Any other mixed background</option>
+
+                <option value="Indian">Indian</option>
+                <option value="Pakistani">Pakistani</option>
+                <option value="Bangladeshi">Bangladeshi</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Any other Asian background">Any other Asian background</option>
+
+                <option value="African">African</option>
+                <option value="Caribbean">Caribbean</option>
+                <option value="Any other Black/African/Caribbean background">Any other Black/African/Caribbean background</option>
+
+                <option value="Arab">Arabian</option>
+
+                <option value="Any Other ethnic group">Any Other ethnic group</option>
+
+                <option value="Not known/not provided">Not known/not provided</option>
+                </select>
+                
+                <br><br>							
+                <!-- ====END OF Ethnicity  section ==== -->	
+                <!-- ====Religion Belief section ==== -->
+                <label class="form-label">Religion / Belief</label>
+            
+                <select>
+                <option value="">Please select</option>
+                <option value="Agnostic">Agnostic</option>
+                <option value="Atheist">Atheist</option>
+                <option value="Buddhist">Buddhist</option>
+                <option value="Christian">Christian</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Humanist">Humanist</option>
+                <option value="Jain">Jain</option>
+                <option value="Jewish">Jewish</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Sikh">Sikh</option>
+                <option value="No Religion">No Religion</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Do not know">Don't know</option>
+                <option value="Other">Other</option>
+                </select>
+                <br><br><br>	
+                <!-- ====END of Religion Belief section ==== -->
+                
+                <!-- ======CONTACT INFORMATION SECTION=========== -->
+                <h4>Contact Information:</h4>
+                <label class="form-label">Address line 1:</label>
+                <input type = "text" name = "address_line_1" size="20" maxlength="30">
+                <br/><br/>
+                
+                <label class="form-label">Address Line 2:</label>
+                <input type = "text" name = "address_line_2" size="20" maxlength="30">
+                <br/><br/>
+                
+                <label class="form-label">Town/City:</label>
+                <input type = "text" name = "towncity" size="20" maxlength="30">
+                <br/><br/>
+                
+                <label class="form-label">County:</label>
+                <input type = "text" name = "county" size="20" maxlength="30">
+                <br/><br/>
+                
+                <label class="form-label">Postcode:</label>
+                <input type = "text" name = "postcode_1" size="2" maxlength="4">
+                <input type = "text" name = "postcode_2" size="2" maxlength="3">
+                <br/><br/>
+                
+                <label class="form-label">Home Telephone:</label>
+                <input type = "text" name = "home_telephone" size="9" maxlength="11">
+                <br/><br/>
+                
+                <label class="form-label">Mobile:</label>
+                <input type = "text" name = "mobile" size="9" maxlength="11">
+                <br/><br/>
+                
+                <label class="form-label">Emergency Contact Telephone:</label>
+                <input type = "text" name = "emergency" size="9" maxlength="11">
+                <br/><br/>
+                
+                
+                <!-- ====EMAIL section ==== -->
+                <label class="form-label">Email:</label>
+                <input type = "text" name = "email" size="20" maxlength="30">
+                <br/><br/>									
+                <!-- ====END OF EMAIL section ==== -->							
+                <!--===== END OF CONTACT INFORMATION SECTION====== -->
+                        
+                <!-- ====Previous Qualification section ==== -->
+                <h4>Previous Qualification(s)</h4>
+                <p>These courses have entry requirements, it is important to tell us 
+                about your previous qualification(s).</p> 
+                
+                <label class="form-label">Do you have any previous Qualification(s)?</label>
+                <input type = "radio" name = "qualification" value = "yes" checked>Yes
+                <input type = "radio" name = "qualification" value = "no" checked>No
+                
+                <p>If you selected YES, please state your previous qualification(s):</p>
+                <select>
+                <option value="">Please select</option>
+                <option value="No qualifications">No qualification(s)</option>
+                <option value="FullLevel_3">Full Level 3 (e.g. two or more A levels, four or more AS levels, BTEC National,	
+                ONC/OND, GNVQ Advanced)</option>
+                <option value="Level_4">Level 4 (e.g. First Degree, HNC/HND, teaching qualifications)</option>
+                <option value="Level_5">Level 5 and above (e.g. HNDS/Other higher diploma, Professional Diplomas)</option>
+                <option value="Level_6">Level 6 and above (e.g. Bachelor degree, Advanced Professional Diplomas)</option>
+                <option value="Level_7">
+                Level 7 and above (e.g. Postgraduate certificate, Fellowships and fellowship diploma, Masters)</option>
+                <option value="Overseas">Overseas Qualification</option>
+                </select>
+                <p>If you stated that you have any Overseas qualification(s),<br>
+                please provide information regarding previously studied qualifications below:</p>
+                 
+                <textarea name = "previous_qualification" rows ="5" cols= "60"	
+                placeholder = "Please, enter details here..."></textarea>
+                <br><br>
+              
+                <!-- ====End of Previous Qualification  section ==== -->
+                
+                <!-- ====Previous Employment place section ==== -->
+                <h4>Previous Place or Type of Employment</h4>
+                <p>These courses have entry requirements, it is important to tell us 
+                about your previous place(s)/type of employment.</p> 
+                
+                <label class="form-label">Do you have any previous employment history?</label>
+                
+                <input type = "radio" name = "employment" value = "yes" checked>Yes
+                <input type = "radio" name = "employment" value = "no" checked>No
+                
+                <p>If you selected YES, please state your previous place(s)/type of employment:</p>
+                
+                <textarea name = "previous_qualification" rows ="5" cols= "60"	
+                placeholder = "Please, enter details here..."></textarea>
+                <br><br>
+                
+                
+                
+                <!-- ====TEXT AREA section ==== -->
+                <h4>Personal Statement</h4>
+                <textarea name = "personal_statement"  rows ="10" cols= "60"	
+                placeholder = "Please, enter your personal statement here..."></textarea>
+                <br><br>
+                <!-- ====END OF TEXT AREA section ==== -->
+                <!-- ====End of Previous Employment place section ==== -->
+                
+                <!-- ====Submit and Reset buttons section ==== -->
+                <input type = "submit" value="Submit">
+                <input type ="reset" value ="Reset">
+                <!-- ====END OF Submit and Reset buttons section ==== -->
+        </fieldset>
+	    </form>		
+    </div>
+    <!--***********END OF FORM SECTION*************-->
+		<br>
+		<p><a href="#top" class="top">Back to Top</a></p>
+		<br><br>
+				
+  </div>	
+<p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!" />
+      </a>
+  </p>
+  <p>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+      </a>
+  </p>
+    <!--********FOOTER SECTION****************-->
+		<footer>
+        <div class="bottomNav">
+          <a href="site-map.html">SITEMAP</a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+        </div> 
+		</footer>
+		<!--**************END OF FOOTER SECTION****************-->
+	<script src="../js/myjavascript.js"></script>	
+	</body>
+</html>
